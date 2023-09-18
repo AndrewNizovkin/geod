@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles/style.css" rel="stylesheet" type="text/css">
     <title>Geod</title>
+    <!-- <script src="js/main.js"></script> -->
 
 </head>
 <body>
@@ -19,28 +20,40 @@
           
         <nav>
           <ul>
-            <li><a href="#">Главная страница</a></li>
+            <li><button type="button" onclick="reloadArticle(0)">Главная страница</button></li>
+            <li><button type="button" onclick="reloadArticle(1)">Импорт из тахеометра</button></li>
+            <li><button type="button" onclick="reloadArticle(2)">Обработка измерений</button></li>
+            <li><button type="button" onclick="reloadArticle(3)">Уравнивание полигона</button></li>
+            <li><button type="button" onclick="reloadArticle(4)">Съёмка шельфа</button></li>
+            <li><button type="button" onclick="reloadArticle(5)">Активация ПО</button></li>
+            <!-- <li><a href="#">Главная страница</a></li>
             <li><a href="#">Импорт из тахеометра</a></li>
             <li><a href="#">Уравнивание полигона</a></li>
-            <li><a href="#">Съёмка шельфа</a></li>
-            <li><a href="#">Активация ПО</a></li>
+            <li><a href="#">Съёмка шельфа</a></li> -->
+            <!-- <li><a href="#">Активация ПО</a></li>
             <li><a href="#">Скачать дистрибутив</a></li>
             <li><a href="#">Скачать обновление</a></li>
-            <li><a href="#">Скачать документацию</a></li>
+            <li><a href="#">Скачать документацию</a></li> -->
           </ul>
         </nav>
         
-        <article>
-            <iframe src="mainpage.html" style="height:500px;width:100%;border:none;"></iframe>
+        <article id="demo">
+            <!-- <iframe src="mainpage.html" style="height:500px;width:100%;border:none;"></iframe> -->
+            <!-- <p id="demo"></p> -->
+            
         </article>
         
         <footer>
+            <p><a href="files/geod.rar">Скачать дистрибутив</a>&nbsp&nbsp<a href="files/upload.rar">Скачать обновление</a>&nbsp&nbsp<a href="files/Geod.doc">Скачать документацию</a></p>
             <p>Copyright © Низовкин А.В. 2000г.</p>
             <p>Техническая поддержка:<a href="mailto:support@geod2000.ru">support@geod2000.ru</a></p>
         </footer>
         
         </div>
-        
+        <script src="js/main.js"></script>
+        <!-- <script>
+            document.getElementById("demo").innerHTML = "Hello JavaScript!";
+        </script>  -->
     
 </body>
 </html>
