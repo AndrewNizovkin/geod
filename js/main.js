@@ -1,16 +1,16 @@
-let article = "<h3>Geod это возможность легко решать простые задачи</h3>\
-<img src='images/taheo.jpg' alt='Taheo' style='padding:10px;float:left;width:150;height:190px;'>\
-<p>Geod применяется для автоматизации камеральной обработки полевых измерений\
- при создании планово-высотных геодезических сетей и производстве\
- топографических съёмок</p>";
+let article = "<h2 style='text-align:center'>Geod</h2>\
+<img src='images/background.jpg' alt='Taheo' style='padding:10px;max-width:100%;height:auto;'>\
+<p style='text-align:center'>Обработка результатов тахеометрической съёмки</p>\
+<p style='text-align:center'>Уравнивание тахеометрических ходов.</p>";
 document.getElementById("demo").innerHTML = article;
 
 function reloadArticle(choice) {
     switch(choice) {
         case 0:
-            article = "<h3>Geod это возможность легко решать простые задачи</h3><img src='images/taheo.jpg' alt='Taheo' style='padding:10px;float:left;width:150;height:190px;'>\
-            <p>Geod применяется для автоматизации камеральной обработки полевых измерений\
-             при создании планово-высотных геодезических сетей и производстве\ топографических съёмок</p>";
+            article = "<h2 style='text-align:center'>Geod</h2>\
+            <img src='images/background.jpg' alt='Taheo' style='padding:10px;max-width:100%;height:auto;'>\
+            <p style='text-align:center'>Обработка результатов тахеометрической съёмки</p>\
+            <p style='text-align:center'>Уравнивание тахеометрических ходов.</p>";
             document.getElementById("demo").innerHTML = article;
         break;
         case 1:
@@ -123,7 +123,7 @@ function reloadArticle(choice) {
             document.getElementById("demo").innerHTML = article;
         break;
         
-        // document.getElementById("demo").innerHTML = article;
+        // document.getElementById("article").innerHTML = article;
 
     }
 
