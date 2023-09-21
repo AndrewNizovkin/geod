@@ -3,7 +3,13 @@ let article = "<h2 style='text-align:center'>Geod</h2>\
 <p style='text-align:center'>Обработка результатов тахеометрической съёмки</p>\
 <p style='text-align:center'>Уравнивание тахеометрических ходов.</p>";
 document.getElementById("demo").innerHTML = article;
-
+document.getElementById("myfooter").innerHTML = '<div class="btn-group btn-group-justified">\
+<a href="files/geod.rar" class="btn btn-link">Дистрибутив</a>\
+<a href="files/upload.rar" class="btn btn-link">Обновление</a>\
+<a href="files/Geod.doc" class="btn btn-link">Документация</a></div>\
+<p>Copyright © Низовкин А.В. 2000г.</p>\
+<p>Техническая поддержка: <a href="mailto:support@geod2000.ru">support@geod2000.ru</a></p>\
+';
 function reloadArticle(choice) {
     switch(choice) {
         case 0:
@@ -122,9 +128,6 @@ function reloadArticle(choice) {
             ПОМОЩЬ-О ПРОГРАММЕ-РЕГИСТРАЦИЯ</p>";
             document.getElementById("demo").innerHTML = article;
         break;
-        
-        // document.getElementById("article").innerHTML = article;
-
     }
 
 }
