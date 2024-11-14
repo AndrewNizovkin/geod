@@ -1,8 +1,10 @@
-let article = "<h2 style='text-align:center'>Geod</h2>\
-<img src='images/background.jpg' alt='Taheo' style='padding:10px;max-width:100%;height:auto;'>\
-<p style='text-align:center'>Обработка результатов тахеометрической съёмки</p>\
-<p style='text-align:center'>Уравнивание тахеометрических ходов.</p>";
-document.getElementById("demo").innerHTML = article;
+
+document.addEventListener("DOMContentLoaded", reloadArticle(0));
+// let article = "<h2 style='text-align:center'>Geod</h2>\
+// <img src='images/background.jpg' alt='Taheo' style='padding:10px;max-width:100%;height:auto;'>\
+// <p style='text-align:center'>Обработка результатов тахеометрической съёмки</p>\
+// <p style='text-align:center'>Уравнивание тахеометрических ходов.</p>";
+// document.getElementById("demo").innerHTML = article;
 document.getElementById("myfooter").innerHTML = '<div class="btn-group btn-group-justified">\
 <a href="files/geod.rar" class="btn btn-link">Дистрибутив</a>\
 <a href="files/upload.rar" class="btn btn-link">Обновление</a>\
@@ -11,12 +13,13 @@ document.getElementById("myfooter").innerHTML = '<div class="btn-group btn-group
 <p>Техническая поддержка: <a href="mailto:support@geod2000.ru">support@geod2000.ru</a></p>\
 ';
 function reloadArticle(choice) {
+    let article;
     switch(choice) {
         case 0:
             article = "<h2 style='text-align:center'>Geod</h2>\
             <img src='images/background.jpg' alt='Taheo' style='padding:10px;max-width:100%;height:auto;'>\
-            <p style='text-align:center'>Обработка результатов тахеометрической съёмки</p>\
-            <p style='text-align:center'>Уравнивание тахеометрических ходов.</p>";
+            <h3 style='text-align:center'>Обработка результатов тахеометрической съёмки</h3>\
+            <h3 style='text-align:center'>Уравнивание тахеометрических ходов.</h3>";
             document.getElementById("demo").innerHTML = article;
         break;
         case 1:
